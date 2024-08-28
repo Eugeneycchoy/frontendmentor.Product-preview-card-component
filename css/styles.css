@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of reset */
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#mobile-img {
+  display: none;
+}
+
+.container img {
+  height: 30rem;
+  border-radius: 15px 0 0 15px;
+}
+
+.text-wrapper {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+}
+
+.text-content {
+  width: 15rem;
+  padding: 3rem;
+  height: 100%;
+}
+
+.text-content h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.text-content h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.text-content p {
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.new-price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+  text-decoration: line-through 1px;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+}
+
+.btn-add-to-cart img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.btn-add-to-cart {
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 10px;
+  width: 14rem;
+}
+
+.btn-add-to-cart a {
+  text-decoration: none;
+  color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-add-to-cart:hover {
+  background-color: hsl(160, 35%, 17%);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (width <= 620px) {
+  .container {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  #desktop-img {
+    display: none;
+  }
+
+  #mobile-img {
+    display: block;
+    height: 22rem;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .text-wrapper {
+    width: 503.062px;
+    border-radius: 0 0 15px 15px;
+    height: 28rem;
+  }
+
+  .text-content {
+    width: 400px;
+  }
+}
